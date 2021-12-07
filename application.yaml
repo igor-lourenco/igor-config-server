@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: pessoa-service # nome da aplicacao para ser referenciada
+   
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'  # pra expor todos os endpoints do actuator
+
+    
+pessoa-service:
+  saudacao: "Hello dev,"
+  nome: "Alex"
+  sobrenome: "Green"
+    
+  
